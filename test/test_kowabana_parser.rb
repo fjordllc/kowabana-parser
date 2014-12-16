@@ -8,7 +8,7 @@ class TestParser < Test::Unit::TestCase
   end
 
   def test_parse!
-    @parser.text <<-EOS
+    @parser.text = <<-EOS
 aaaaaaaaaaaa
 bbbbbbbbbbbb
 

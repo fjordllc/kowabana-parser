@@ -1,6 +1,8 @@
-# Kowabana::Parser
+# kowabana-parser
 
-TODO: Write a gem description
+![TravisCI Build Status](https://secure.travis-ci.org/fjordllc/kowabana-parser.png)
+
+Parsing KML(Kowabana Markup Language).
 
 ## Installation
 

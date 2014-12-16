@@ -5,7 +5,7 @@ module Kowabana
     attr_accessor :text
     attr_reader :wallpaper_ids
 
-    def initialize(text)
+    def initialize(text = '')
       @text = text
       @wallpaper_ids = []
     end
@@ -23,7 +23,7 @@ module Kowabana
     private
 
     def cleanup!
-      @text.gsub!(/(\r\n|\r)/, "\n").gsub!(/\n+/, "\n")
+      @text = @text.gsub(/(\r\n|\r)/, "\n").gsub(/\n+/, "\n")
     end
   end
 end
