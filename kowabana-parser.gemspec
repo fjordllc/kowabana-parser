@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Kowabana::Parser::VERSION
   spec.authors       = ['Masaki Komagata']
   spec.email         = ['komagata@gmail.com']
-  spec.summary       = 'TODO: Write a short summary. Required.'
-  spec.description   = 'TODO: Write a longer description. Optional.'
-  spec.homepage      = ''
+  spec.summary       = 'Parsing KML(Kowabana Markup Language).'
+  spec.description   = 'Parsing KML(Kowabana Markup Language).'
+  spec.homepage      = 'https://github.com/fjordllc/kowabana-parser'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")

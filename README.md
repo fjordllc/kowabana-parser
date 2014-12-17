@@ -22,7 +22,28 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+parser = Kowabana::Parser.new(<<-EOS)
+music:1
+aaaaaaaaaaaa
+wallpaper:1
+music:3
+shake
+
+wallpaper:2
+sound:1
+nextpage
+
+wallpaper:4
+bbbbbbbbbbbb
+sound:3
+EOS
+
+parser.wallpaper_ids #=> [1, 2, 4]
+parser.music_ids #=> [1, 3]
+parser.sound_ids #=> [1, 3]
+parser.plain_texts #=> ['aaaaaaaaaaaa', 'bbbbbbbbbbbb']
+```
 
 ## Contributing
 
