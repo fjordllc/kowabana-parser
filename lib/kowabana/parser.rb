@@ -31,6 +31,10 @@ module Kowabana
           @plain_texts << line
         end
       end
+
+      @wallpaper_ids.uniq!
+      @music_ids.uniq!
+      @sound_ids.uniq!
     end
 
     private
